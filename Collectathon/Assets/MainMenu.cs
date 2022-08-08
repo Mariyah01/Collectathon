@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string gameScene;
     [SerializeField] private Canvas howTo;
     [SerializeField] private Canvas main;
+
+    private void Awake()
+    {
+        howTo = GameObject.FindGameObjectWithTag("HowToCanvas").GetComponent<Canvas>();
+        howTo.enabled = false;
+    }
+    
 
     public void PlayGame()
     {
