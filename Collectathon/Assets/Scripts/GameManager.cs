@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI timer;
-    [SerializeField] private int timeLeft;
+    //[SerializeField] private TextMeshProUGUI timer;
+    [SerializeField] private float timeLeft;
+    [SerializeField] private Image timePie;
 
     private void Start()
     {
@@ -18,14 +20,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer.text = ($"{timeLeft}");
-        
+        //timer.text = ($"{timeLeft}");
+        timePie.fillAmount = timeLeft;
         if(timeLeft<=0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void Countdown()
     {
-        timeLeft--;
+        timeLeft -= 0.01f;
     }
 }

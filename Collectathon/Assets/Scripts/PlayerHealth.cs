@@ -8,14 +8,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    
-    [SerializeField] private TextMeshProUGUI healthValue;
-    private int health = 100;
+    [SerializeField] private Image healthBar;
+    //[SerializeField] private TextMeshProUGUI healthValue;
+    [SerializeField] private float health=1;
 
     // Update is called once per frame
     void Update()
     {
-        healthValue.text = ($"{health}");
+        //healthValue.text = ($"{health}");
+        healthBar.fillAmount = health;
 
         if (health <= 0)
             Die();
@@ -25,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Hazard"))
         {
-            health -= 10;
+            health -= 0.1f;
         }
     }
 

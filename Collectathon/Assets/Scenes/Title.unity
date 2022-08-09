@@ -183,8 +183,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -535,6 +536,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5475839398749842423, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 8015209142873087646, guid: 5fd3aa42badac4a49bfd4e1223f8eb62,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b42d68bd53d3d9428aa04b13c56cfaf, type: 3}
 --- !u!1 &438531146
@@ -599,8 +606,9 @@ MonoBehaviour:
 
     WASD/Arrows'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1160,16 +1168,16 @@ RectTransform:
   m_GameObject: {fileID: 668210467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.41657, y: 0.41657, z: 0.41657}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 991809121}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &668210469
 MonoBehaviour:
@@ -1345,8 +1353,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: A quest to find the tree of life
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1586,8 +1595,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1721,8 +1731,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Collect the coins to find the tree of life before you run out of time
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1856,8 +1867,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1991,8 +2003,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: How to play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2561,8 +2574,9 @@ MonoBehaviour:
 
     Spacebar'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2696,8 +2710,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pinocchio
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7b1f73841a6cfb4d9de86fefd727cd5, type: 2}
+  m_sharedMaterial: {fileID: -3426983357832354989, guid: a7b1f73841a6cfb4d9de86fefd727cd5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource _audioSource;
+    public AudioSource _musicSource;
+    
+    public AudioSource _effectsSource;
 
     public AudioClip playerJump, coinCollect, winSound, bridge;
 
@@ -14,30 +16,25 @@ public class SoundManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
-    
-    void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
-    }
 
     // Update is called once per frame
     public void PlayPlayerJump()
     {
-        _audioSource.PlayOneShot(playerJump);
+        _effectsSource.PlayOneShot(playerJump);
     }
 
     public void PlayCoinCollect()
     {
-        _audioSource.PlayOneShot(coinCollect);
+        _effectsSource.PlayOneShot(coinCollect);
     }
 
     public void PlayWinSound()
     {
-        _audioSource.PlayOneShot(winSound);
+        _effectsSource.PlayOneShot(winSound);
     }
 
     public void PlayBridge()
     {
-        _audioSource.PlayOneShot(bridge);
+        _effectsSource.PlayOneShot(bridge);
     }
 }

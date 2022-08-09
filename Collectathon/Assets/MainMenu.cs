@@ -15,7 +15,12 @@ public class MainMenu : MonoBehaviour
         howTo = GameObject.FindGameObjectWithTag("HowToCanvas").GetComponent<Canvas>();
         howTo.enabled = false;
     }
-    
+
+    private void Start()
+    {
+        main = GameObject.FindGameObjectWithTag("MenuCanvas").GetComponent<Canvas>();
+        howTo = GameObject.FindGameObjectWithTag("HowToCanvas").GetComponent<Canvas>();
+    }
 
     public void PlayGame()
     {
@@ -24,16 +29,12 @@ public class MainMenu : MonoBehaviour
 
     public void ShowHow()
     {
-        main = GameObject.FindGameObjectWithTag("MenuCanvas").GetComponent<Canvas>();
-        howTo = GameObject.FindGameObjectWithTag("HowToCanvas").GetComponent<Canvas>();
         main.enabled = false;
         howTo.enabled = true;
     }
 
     public void BackToMain()
     {
-        main = GameObject.FindGameObjectWithTag("MenuCanvas").GetComponent<Canvas>();
-        howTo = GameObject.FindGameObjectWithTag("HowToCanvas").GetComponent<Canvas>();
         howTo.enabled = false;
         main.enabled = true;
     }
