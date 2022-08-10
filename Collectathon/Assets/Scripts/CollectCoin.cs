@@ -41,7 +41,6 @@ public class CollectCoin : MonoBehaviour
 
         if (Coins == 20)
         {
-            sm.PlayWinSound();
             tree.SetActive(true);
         }
 

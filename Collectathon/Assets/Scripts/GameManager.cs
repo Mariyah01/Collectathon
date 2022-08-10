@@ -11,9 +11,15 @@ public class GameManager : MonoBehaviour
     //[SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private float timeLeft;
     [SerializeField] private Image timePie;
-
+    [SerializeField] private Canvas resultCanvas;
+    public SoundManager sm;
+    [SerializeField] private TextMeshProUGUI result;
+    private bool lose=true;
+    
     private void Start()
     {
+        //Hello
+        sm = FindObjectOfType<SoundManager>();
         InvokeRepeating("Countdown",1,1);
     }
 
@@ -22,8 +28,15 @@ public class GameManager : MonoBehaviour
     {
         //timer.text = ($"{timeLeft}");
         timePie.fillAmount = timeLeft;
-        if(timeLeft<=0)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (timeLeft <= 0 && lose)
+        {
+            lose = false;
+            sm.PlayLoseSound();
+            result.text = "You lost :(";
+            resultCanvas.enabled = true;
+        }
+            
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void Countdown()

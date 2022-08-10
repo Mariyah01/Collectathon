@@ -8,7 +8,7 @@ public class SoundManager : MonoBehaviour
     
     public AudioSource _effectsSource;
 
-    public AudioClip playerJump, coinCollect, winSound, bridge;
+    public AudioClip playerJump, coinCollect, winSound, loseSound, bridge;
 
     public static SoundManager instance;
 
@@ -31,6 +31,11 @@ public class SoundManager : MonoBehaviour
     public void PlayWinSound()
     {
         _effectsSource.PlayOneShot(winSound);
+    }
+    
+    public void PlayLoseSound()
+    {
+        _effectsSource.PlayOneShot(loseSound);
     }
 
     public void PlayBridge()

@@ -1,13 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class OnTouch : MonoBehaviour
 {
     public SoundManager sm;
     [SerializeField] private GameObject bridge;
+    [SerializeField] private Canvas resultCanvas;
+    [SerializeField] private TextMeshProUGUI result;
     private void Awake()
     {
         bridge.SetActive(false);
@@ -20,10 +24,11 @@ public class OnTouch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.CompareTag("Tree"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            result.text = "You won!";
+            resultCanvas.enabled = true;
+            sm.PlayWinSound();
         }
 
         if (other.gameObject.CompareTag("BridgeButton"))
