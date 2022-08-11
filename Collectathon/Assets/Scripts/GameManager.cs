@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI result;
     private bool lose=true;
     
+    
     private void Start()
     {
         //Hello
@@ -42,5 +43,13 @@ public class GameManager : MonoBehaviour
     private void Countdown()
     {
         timeLeft -= 0.01f;
+    }
+
+    public void Win()
+    {
+        CancelInvoke("Countdown");
+        result.text = "You won!";
+        resultCanvas.enabled = true;
+        sm.PlayWinSound();
     }
 }

@@ -12,6 +12,7 @@ public class OnTouch : MonoBehaviour
     [SerializeField] private GameObject bridge;
     [SerializeField] private Canvas resultCanvas;
     [SerializeField] private TextMeshProUGUI result;
+    private GameManager _gameManager;
     private void Awake()
     {
         bridge.SetActive(false);
@@ -20,15 +21,15 @@ public class OnTouch : MonoBehaviour
     private void Start()
     {
         sm = FindObjectOfType<SoundManager>();
+        _gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Tree"))
         {
-            result.text = "You won!";
-            resultCanvas.enabled = true;
-            sm.PlayWinSound();
+            //cancel invoke
+            _gameManager.Win();
         }
 
         if (other.gameObject.CompareTag("BridgeButton"))
