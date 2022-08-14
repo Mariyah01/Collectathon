@@ -2772,6 +2772,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5506348059114343339, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: bridge
+      value: 
+      objectReference: {fileID: 8300000, guid: c3f5fa1e552efcd4486118626a49f0c5, type: 3}
+    - target: {fileID: 5506348059114343339, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ab9d01c8896213c4bab9ba42a9868dc5, type: 3}
+    - target: {fileID: 5506348059114343339, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b785543abdbd4b940a633d8a830a583f, type: 3}
+    - target: {fileID: 5506348059114343339, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: playerJump
+      value: 
+      objectReference: {fileID: 8300000, guid: f56fab4c33c162f4f9eaa55d49a5386d, type: 3}
+    - target: {fileID: 5506348059114343339, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: coinCollect
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d312f6dbe3628744bc61d3950dc488f, type: 3}
+    - target: {fileID: 5909834579999377164, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b947f457235ba5a4f839f1112c06ffdc, type: 3}
     - target: {fileID: 7214737357992740742, guid: 1b42d68bd53d3d9428aa04b13c56cfaf,
         type: 3}
       propertyPath: m_RootOrder
